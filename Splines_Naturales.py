@@ -360,7 +360,7 @@ tk.Label(panel, text="Puntos (x,y)", bg=PANEL, fg=SUBTEXT,
 entrada_puntos = tk.Text(panel, height=7, bg="#ffffff", fg=TEXT,
                          insertbackground=TEXT, relief="flat", font=("Consolas", 11))
 entrada_puntos.pack(fill=tk.X, padx=15, pady=5)
-entrada_puntos.insert(tk.END, "1,2\n2,3\n3,5\n4,4\n5,6")
+entrada_puntos.insert(tk.END, "3.0,-4.240058\n3.1,-3.496909\n3.2,-2.596792\n\n")
 
 tk.Label(panel, text="Valor a interpolar", bg=PANEL, fg=SUBTEXT,
          font=("Segoe UI", 10)).pack(anchor="w", padx=15)
@@ -368,7 +368,7 @@ tk.Label(panel, text="Valor a interpolar", bg=PANEL, fg=SUBTEXT,
 entrada_valor = tk.Entry(panel, bg="#ffffff", fg=TEXT, insertbackground=TEXT,
                          relief="flat", font=("Consolas", 12))
 entrada_valor.pack(fill=tk.X, padx=15, pady=5)
-entrada_valor.insert(0, "2.5")
+entrada_valor.insert(0, "3.1")
 
 def crear_boton(texto, comando, color):
     return tk.Button(panel, text=texto, command=comando, bg=color, fg="white",
